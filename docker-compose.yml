@@ -1,7 +1,7 @@
 services:
   frontend:
     build:
-      context: ./test-phase-2
+      context: .
       dockerfile: Dockerfile
     restart: unless-stopped
     networks:
