@@ -1,14 +1,14 @@
 services:
   frontend:
     build:
-      context: .
+      context: ./test-phase-2
       dockerfile: Dockerfile
     restart: unless-stopped
     networks:
       - ghgcope-be
     labels:
       - "coolify.expose=true"
-      - "coolify.name=ghgcope-fe"
+      - "coolify.name=ghgcope-fe-v2"
       - "coolify.port=80"
     expose:
       - "80"
